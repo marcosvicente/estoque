@@ -37,8 +37,14 @@ gem 'jbuilder', '~> 2.5'
 # Devise for authentication
 gem 'devise'
 
+# Devise i18n
+gem 'devise-i18n'
+
 # materialize gem
 gem 'materialize-sass'
+
+# Framework materialize icons
+gem 'material_icons'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
