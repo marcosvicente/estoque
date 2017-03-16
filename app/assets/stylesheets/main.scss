@@ -1,0 +1,32 @@
+
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("blue", "base") !default;
+@import 'materialize';
+.account-banner-image{
+  height:  116px;
+}
+.account-banner-photo{
+  margin-top:-100px;
+}
+.user-navbar-photo img{
+  width: 3rem;
+  margin-top: 0.65rem;
+}
+.user-navbar-photo span{
+
+}
+
+
+ // base
+
+header, main, footer {
+     padding-left: 22rem;
+   }
+
+@media only screen and (max-width : 992px) {
+ header, main, footer {
+
+   padding-left: 0;
+ }
+}

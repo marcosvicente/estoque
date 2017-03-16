@@ -16,18 +16,38 @@
         <i class="material-icons">menu</i>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+      
         <li><a href="#">text 1</a></li>
         <li><a href="#">text 2</a></li>
         <li><a href="#">text 3</a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
+      <ul class="side-nav fixed" id="mobile-demo">
+        <li>
+          <div class="account-banner">
+            <div class="background account-banner-image" >
+              <%= image_tag("company.jpg")%>
+            </div><!-- account-banner-image -->
+            <div class="account-banner-content ">
+                <a href="#!user">
+                  <%= image_tag("user-logo.jpg", :class => "circle account-banner-photo")%>
+                </a>
+
+                <a href="#"><span class="white-text name">John Doe</span></a>
+                <a href="#"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div><!-- account-banner-content -->
+          </div><!-- account-banner -->
+        </li>
         <li><a href="#">text 1</a></li>
+        <li><div class="divider"></div></li>
         <li><a href="#">text 2</a></li>
+        <li><div class="divider"></div></li>
+
         <li><a href="#">text 3</a></li>
       </ul>
     </div>
   </nav>
-
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
